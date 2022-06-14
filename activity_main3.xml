@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="364dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/textbackground2"
+                android:gravity="center"
+                android:text="Enter your name below"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/textbackground2"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Plyer 1 name"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/textbackground2"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Plyer 2 name"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="136dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/textbackground"
+                android:onClick="jj"
+                android:text="play game"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
