@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="368dp"
+        android:layout_height="368dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bb"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="104dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="5dp"
+            android:onClick="dropin"
+            android:tag="0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="94dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="29dp"
+            android:onClick="dropin"
+            android:tag="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="102dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="26dp"
+            android:onClick="dropin"
+            android:tag="2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="106dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="25dp"
+            android:onClick="dropin"
+            android:tag="3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="96dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="16dp"
+            android:onClick="dropin"
+            android:tag="4"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="102dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:onClick="dropin"
+            android:tag="5"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="108dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="15dp"
+            android:onClick="dropin"
+            android:tag="6"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="96dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="10dp"
+            android:onClick="dropin"
+            android:tag="7"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="102dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
+            android:onClick="dropin"
+            android:tag="8"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/WinnerTextView"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <Button
+        android:id="@+id/PlayAgainButton"
+        android:layout_width="237dp"
+        android:layout_height="60dp"
+        android:onClick="PlayAgain"
+        android:text="PlayAgain"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WinnerTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
